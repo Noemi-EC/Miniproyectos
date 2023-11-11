@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.container{
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  /* padding: auto; */
+  padding-top: 10%;
+  /* background-color: #A6AACF; */
+}
+.piso, .punta{
+  background-color: #8F4848;
+  border-radius: 56px;
+}
+.punta{
+  /* display: block; */
+  width: 60px;
+  height: 90px;
+  border-radius: 100px 0;
+  /* position: absolute; */
+  /* top: 40px;
+  left: 160px; */
+  margin: 0 auto 0 auto;
+  transform: rotate(-70deg);
+}
+.pisos{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 0 auto;
+}
+.piso{
+  top: -20px;
+  height: 70px;
+  position: relative;
+  margin: -20px auto;
+}
+.uno{
+  width: 110px;
+}
+.dos{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+.tres{
+  width: 190px;
+}
+.ojo{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  position: relative;
+}
+.pupila{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #333;
+  /* transform: translate(23px, 23px); */
+}

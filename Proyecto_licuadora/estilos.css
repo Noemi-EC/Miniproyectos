@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: rgb(242, 242, 196);
+}
+.blender{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 548px;
+  /* background-color: red; */
+  /* background-image: url("../img/tren.png"); */
+  background-image: url("../img/hola.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blender.active{
+  /* background-image: url("../img/astronautas.jpg"); */
+  background-image: url("../img/adios.jpg");
+}
+.blender-button{
+  margin: 450px auto 0px;
+  width: 70px;
+  height: 70px;
+}
+.blender-button{
+  border-radius: 50%;
+  background-color: rgba(105, 96, 96, 0.5)
+}
+.blender-button:hover{
+  background-color: rgba(105, 96, 96, 0.71);
+  cursor: pointer;
+}

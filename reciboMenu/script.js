@@ -1,0 +1,2 @@
+// los input number tienen  que estar en disabled si no se presionan los checkbox
+// cuando se presione algún checkbox, se tiene que mostrar en CUENTA el nombre y la cantidad de los platos según el tipo además del monto

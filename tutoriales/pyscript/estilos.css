@@ -1,0 +1,10 @@
+body{
+  margin: 50px;
+}
+.contenedor{
+  margin: 50px auto;
+  background-color: beige;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}

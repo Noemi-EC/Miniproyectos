@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor{
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+h1{
+  text-align: center;
+  margin-top: 60%;
+  margin-bottom: 20px;
+}
+.fecha, .dia, .contBtn{
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 20px;
+}
+.dia{
+  margin-bottom: 80%;
+}
+label, p, h1{
+  display: block;
+  font-family: 'Montserrat';
+  margin-left: 5px;
+}
+input{
+  width: 50px;
+  font-family: 'Montserrat';
+  border: none;
+}
+#tu_dia{
+  font-family: 'Monoton';
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+#btn{
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  margin: auto;
+  padding: 15px;
+  color: white;
+  background-color: #9FA7FB;
+  border: none;
+  border-radius: 25px;
+}
+#btn:hover{
+  background-color: #818CFF;
+  color: whitesmoke;
+  transform: scale(0.95);
+}
+/* colores
+#5662E9
+#56E7E9
+#7FE956
+#D5E956
+#E9D256
+#E98A56
+*/

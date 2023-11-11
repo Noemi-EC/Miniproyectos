@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Your Birthday</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>¿Qué día de la semana naciste?</h1>
+    <section class="fecha">
+      <label for="anio">Año: 
+      <input type="number" name="anio" id="anio" min="0" required>
+      </label>
+  
+      <label for="mes">Mes: 
+      <input type="number" name="mes" id="mes" min="1" max="12" required>
+      </label>
+    
+      <label for="dia">Día:
+      <input type="number" name="dia" id="dia" min="1" max="31" required>
+      </label>
+    </section>
+    
+    <section class="contBtn">
+    <button id="btn">Averiguar</button>
+    </section>
+    
+    <section class="dia">
+      <p>¡Tú naciste un día <span id="tu_dia">...</span>!</p>
+    </section>
+  </div>
+  <script src="main.js"></script>
+  <!-- para el confeti -->
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <!-- sweet alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+  <!--jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</body>
+
+</html>

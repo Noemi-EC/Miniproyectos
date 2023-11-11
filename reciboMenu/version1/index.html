@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Las papas felices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="titulos">
+    <h1>Las papas felices</h1>
+    <h3>MENÚ</h3>
+  </div>
+  <div class="contenedor menu">
+  <!-- <div class="contenedor">
+    <div class="menu"> -->
+      <form action="">
+        <fieldset>
+          <legend>FRUTAS</legend>
+          <label>
+            <p class="plato"><input type="checkbox" name="fruta" id="fresa" value="fresa">Fresas</p><p class="precio">S/ 3.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="fruta" id="sandia" value="sandia">Sandia</p><p class="precio">S/ 3.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="fruta" id="granadilla" value="granadilla">Granadilla</p><p class="precio">S/ 2.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="fruta" id="platano" value="platano">Plátano</p><p class="precio">S/ 1.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="fruta" id="manzana" value="manzana">Manazana</p><p class="precio">S/ 1.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>SOPAS</legend>
+          <label>
+            <p><input type="checkbox" name="sopa" id="aguadito" value="aguadito">Aguadito</p><p class="precio">S/ 15.45</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="sopa" id="frejol" value="frejol">Sopa de Frejol</p><p class="precio">S/ 25.69</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="sopa" id="mote" value="mote">Caldo de Mote</p><p class="precio">S/ 24.90</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="sopa" id="gallina" value="gallina">Caldo de Gallina</p><p class="precio">S/ 24.90</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="sopa" id="chilcano" value="chilcano">Chilcano</p><p class="precio">S/ 21.40</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>SEGUNDOS</legend>
+          <label>
+            <p><input type="checkbox" name="segundo" id="rojos" value="rojos">Tallarines rojos</p><p class="precio">S/ 34.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="segundo" id="ceviche" value="ceviche">Ceviche</p><p class="precio">S/ 34.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="segundo" id="verdes" value="verdes">Tallarines verdes</p><p class="precio">S/ 34.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="segundo" id="arrozpollo" value="arrozpollo">Arroz con Pollo
+            </p><p class="precio">S/ 39.90</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="segundo" id="arrozjard" value="arrozjard">Arroz a la Jardinera</p><p class="precio">S/ 39.90</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="segundo" id="purepapa" value="purepapa">Puré de Papa</p><p class="precio">S/ 37.90</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>BEBIDAS</legend>
+          <label>
+            <p><input type="checkbox" name="bebida" id="morada" value="morada">Chicha morada</p><p class="precio">S/ 5.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="bebida" id="jora" value="jora">Chicha de Jora</p><p class="precio">S/ 5.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="bebida" id="maracuya" value="maracuya">Maracuyá</p><p class="precio">S/ 5.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="bebida" id="te" value="te">Té</p><p class="precio">S/ 2.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <!-- te helado o caliente -->
+          <label>
+            <p><input type="checkbox" name="bebida" id="limonada" value="limonada">Limonada</p><p class="precio">S/ 5.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+        </fieldset>
+        <fieldset>
+          <legend>POSTRES</legend>
+          <label>
+            <p><input type="checkbox" name="postre" id="choco" value="choco">Torta de Chocolate</p><p class="precio">S/ 15.60</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="postre" id="leches" value="leches">Tres Leches</p><p class="precio">S/ 17.60</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="postre" id="tiramisu" value="tiramisu">Tiramisú</p><p class="precio">S/ 16.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="postre" id="gelatina" value="gelatina">Gelatina con Frutas</p><p class="precio">S/ 10.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+          <label>
+            <p><input type="checkbox" name="postre" id="budin" value="budin">Budín</p><p class="precio">S/ 12.50</p><p class="platos_cant"><input type="number" min="1" max="5"></p>
+          </label>
+        </fieldset>
+      </form>
+    </div>
+    <!-- </div> -->
+    <div class="contenedor cuenta">
+    <!-- <div class="contenedor">
+    <div class="cuenta"> -->
+      <fieldset disabled>
+        <legend>CUENTA</legend>
+        <div class="bill">
+          <article class="platos">PLATOS</article>
+          <article class="bill_cant">CANTIDAD</article>
+          <article class="monto">MONTO</article>
+          <article class="total">TOTAL</article>
+        </div>
+      </fieldset>
+    <!-- </div> -->
+  </div>
+  <!-- Project -->
+  <script src="script.js"></script>
+</body>
+</html>

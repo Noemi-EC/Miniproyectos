@@ -1,0 +1,33 @@
+:root{
+  --gradiente-1: -webkit-linear-gradient(
+    top left,
+    tomato, 
+    rgb(244, 244, 120), 
+    rgb(174, 201, 115)
+    );
+  --gradiente-2: -webkit-linear-gradient(
+    top left,
+    rgb(145, 48, 206),
+    rgb(154, 63, 234),
+    rgb(125, 73, 242),
+    rgb(85, 73, 229),
+    rgb(88, 141, 229) 
+    );
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: var(--gradiente-2);
+  background-size: 300%;
+  height: 100vh;
+  animation: animacion 5s infinite alternate;
+}
+
+@keyframes animacion{
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}

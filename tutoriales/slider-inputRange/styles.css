@@ -1,0 +1,38 @@
+/* Cambiar el color de la barra */
+#miInputRange {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  /* Cambiar el color de fondo de la barra */
+  background: #edeef3;
+  /* Cambiar el color de la barra (para navegadores que no soportan 'webkit') */
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Cambiar el color del círculo (thumb) en navegadores que soportan 'webkit' */
+#miInputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  position: relative;
+  background: #42445A;
+  cursor: pointer;
+}
+#miInputRange::-webkit-slider-runnable-track{
+  /* -webkit-track: none; */
+  background-color: #42445A;
+  height: 3px;
+}
+#miInputRange::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: #42445A;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -9px;
+}

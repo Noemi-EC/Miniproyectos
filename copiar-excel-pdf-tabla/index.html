@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Generador de PDF, copia y Excel</title>
+</head>
+<body>
+  <h1 class="text-center">Generador de PDF, copia y Excel</h1>
+  <div class="grid container">
+    
+    <table id="tabla" class="table table-bordered table-striped table-sm">
+      <tr>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Edad</th>
+      </tr>
+      <tr>
+        <td>María Noemi</td>
+        <td>Espinoza Campos</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Azucena Martina</td>
+        <td>Cáceres Chinchay</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>David Américo</td>
+        <td>Huancho Acuña</td>
+        <td>21</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="grid text-center">
+    <button id="btn-exportar-pdf" class="btn btn-primary btn-lg" onclick="generarPDF()"> Exportar a PDF  <i class="far fa-file-pdf"></i></button>
+    <button id="btn-exportar-excel" class="btn btn-success btn-lg"> Exportar a Excel  <i class="far fa-file-excel"></i></button>
+    <button id="btn-copiar-tabla" class="btn btn-secondary btn-lg"> Copiar Tabla  <i class="far fa-copy"></i></button>
+  </div>
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js.map"></script> -->
+
+  <!-- <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <!-- página de donde encontré esto -->
+  <!-- https://codingshiksha.com/javascript/jspdf-autotable-tutorial-to-add-colorful-themes-tables-in-pdf-document-using-javascript/ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.core.min.js" integrity="sha512-UhlYw//T419BPq/emC5xSZzkjjreRfN3426517rfsg/XIEC02ggQBb680V0VvP+zaDZ78zqse3rqnnI5EJ6rxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- página del cdn -->
+    <!-- https://cdnjs.com/libraries/xlsx -->
+
+  <!-- font awsome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

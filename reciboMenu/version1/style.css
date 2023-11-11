@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 170px);
+  grid-template-areas: 
+  "ti ti"
+  "n1 n2"
+  "n1 n2"
+  "n1 n2"
+  "n1 n2"
+  "n1 n2";
+}
+.contenedor{
+  /* background-color: aqua; */
+  margin: 0 15px;
+  height: 100;
+  /* max-width: 850px; */
+  /* width: 40vw; */
+}
+form{
+  /* background-color: #BFC3F0; */
+  padding-bottom: 2em;
+}
+.titulos{
+  grid-area: ti;
+  /* background-color: #BFC3F0; */
+  /* position: fixed; */
+  /* width: 100%; */
+}
+h1{
+  margin-top: 40px;
+  text-align: center;
+}
+h3{
+  margin-bottom: 40px;
+  margin-top: 15px;
+  text-align: center;
+}
+fieldset{
+  margin-bottom: 25px;
+  padding: 30px 20px 20px 20px;
+}
+legend{
+  text-align: center;
+  font-size: 1.1em;
+}
+label p{
+  width: 50%;
+  display: inline-block;
+  padding-left: 5%;
+  margin-bottom: 20px;
+}
+input[type="checkbox"]{
+  display: inline-block;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+}
+.precio{
+  background-color: #BFC3F0;
+  text-align: right;
+  width: 18%;
+}
+.platos_cant{
+  width: 5%;
+}
+.menu{
+  grid-area: n1;
+  min-width: 385px;
+  max-width: 500px;
+  /* background-color: #BFC3F0; */
+}
+.cuenta{
+  grid-area: n2;
+  min-width: 400px;
+  max-width: 500px;
+}
+.bill{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "p c m"
+  "t t t";
+}
+.platos{
+  grid-area: p;
+}
+.bill_cant{
+  grid-area: c;
+}
+.monto{
+  grid-area: m;
+}
+.total{
+  grid-area: t;
+}
