@@ -1,0 +1,27 @@
+@import url(https://unpkg.com/css-peeps@1/css-peeps.compat.css);
+
+div{
+  background-image: url(https://i.pinimg.com/564x/08/72/0d/08720d791dc146cf7615c494ed7fd920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+}
+
+a {
+  --peep-hat-color: #FC03C2;
+  --peep-hair-color: #7300E6;
+  --peep-skin-color: #f9eab4;
+  --peep-accessory-color: #00ff00;
+  --peep-facial-hair-color: #ffd700;
+  --peep-object-color: #ffb01f;
+  --peep-clothes-color: #b514ff;
+
+  display: inline-block;
+  width: 425px;
+  height: 385px;
+  /* background: white; */
+  border-radius: 10px;
+  /* border: 2px solid var(--peep-accessory-color); */
+}
+
+
